@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  JQuery  -->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!-- Slider js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Fancy box opening image-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/general.css">
+
+    <title>House</title>
+</head>
+<body>
+    <div class="header-top">
+        <a href="#home" class="link logo block-center" lang="text-ru">Дом</a>
+        <a href="#home" class="link logo block-center" lang="text-en">House</a>
+        <a href="#home" class="link logo block-center" lang="text-hu">Ház</a>
+        <nav class="navigation">
+            <ul class="menu block-center">
+                <li class="menu-element">
+                    <a class="link menu-element__link active home block-center" href="#home"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                    </svg>
+                    </a></li>
+                <li class="menu-element">
+                    <a class="link menu-element__link block-center" href="#about-me"lang="text-ru">О&nbsp;доме</a>
+                    <a class="link menu-element__link block-center" href="#about-me" lang="text-en">About&nbsp;House</a>
+                    <a class="link menu-element__link block-center" href="#about-me" lang="text-hu">Házról</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-element__link block-center" href="#achievements" lang="text-ru">Фото</a>
+                    <a class="link menu-element__link block-center" href="#achievements" lang="text-en">Pictures</a>
+                    <a class="link menu-element__link block-center" href="#achievements" lang="text-hu">Képek</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-element__link block-center" href="#goldenvisa" lang="text-ru">Золотая&nbsp;Виза</a>
+                    <a class="link menu-element__link block-center" href="#goldenvisa" lang="text-en">Gold&nbsp;Visa</a>
+                    <a class="link menu-element__link block-center" href="#goldenvisa" lang="text-hu">Gold&nbsp;Visa</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-element__link block-center message" href="#contact-me" lang="text-ru">Свяжитесь&nbsp;со&nbsp;мной</a>
+                    <a class="link menu-element__link block-center message" href="#contact-me" lang="text-en">Contact&nbsp;Me</a>
+                    <a class="link menu-element__link block-center message" href="#contact-me" lang="text-hu">Lépjen&nbsp;kapcsolatba</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div class="switcher-container block-center">
+            <div class="switcher-container block-center">
+                <div class="switcher-wrapper">
+                    <input type="radio" name="lang" id="lang-ru" checked />
+                    <label class="switcher" for="lang-ru" lang="ru">Ru</label>
+    
+                    <input type="radio" name="lang" id="lang-en" />
+                    <label class="switcher" for="lang-en" lang="en">Eng</label>
+    
+                    <input type="radio" name="lang" id="lang-hu" />
+                    <label class="switcher" for="lang-hu" lang="Hun">Hun</label>
+    
+                    <span class="lang-placeholder"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="home">
+        <img class="header-background" src="images/WhatsApp Image 2024-12-01 at 20.36.02.jpeg" alt="" >
+        <div class="header-background__wrapper"></div>
+        
+        <div class="header-center">
+            <div class="header-center__wrapper">
+                <h1 class="name" lang="text-ru">Дом</h1>
+                <h1 class="name" lang="text-en">House</h1>
+                <h1 class="name" lang="text-hu">Ház</h1>
+
+                <p class="description" lang="text-ru">Приветствие</p>
+                <p class="description" lang="text-en">Greeting</p>
+                <p class="description" lang="text-hu">Üdvözlet</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-me" id="about-me">
+        <div class="left">
+            <img src="images/foto/WhatsApp Image 2024-12-01 at 20.37.00.jpeg" alt="My foto" class="about-me__image">
+        </div>
+
+        <div class="right">
+            <h2 class="about-me__title" lang="text-ru">Вилла</h2>
+            <h2 class="about-me__title" lang="text-en">Villa</h2>
+            <h2 class="about-me__title" lang="text-hu">Villa</h2>
+
+            <p class="about-me__description" lang="text-ru">В Хевизе продается 3-х этажный дом с красивой панорамой, полностью меблированный и механизированный, ищет новых владельцев.</p>
+            <p class="about-me__description" lang="text-en">In Hévíz, a 3-floor house with a beautiful panorama is for sale, fully furnished and equipped, looking for new owners.</p>
+            <p class="about-me__description" lang="text-hu">Hévízen  3 szintes gyönyörű panorámával, teljesen berendezett és gépesített, családi ház keresik új gazdákat.</p>
+            
+            <p class="about-me__description" lang="text-ru">На первом этаже небольшая квартира площадью 61 м²: спальня, гостиная, столовая с американской кухней, санузел. На первом этаже находится квартира площадью 95 м2 со спальней, гостиной, столовой с американской кухней и ванной комнатой. И гараж для машин. На верхнем этаже расположены 3 отдельные гостевые комнаты площадью 29, 24, 35 кв.м. с санузлом и мини-кухней.</p>
+            <p class="about-me__description" lang="text-en">On the ground floor, there is a small apartment with an area of 61 m²: a bedroom, a living room, a dining area with an American-style kitchen, and a bathroom. On the first floor, there is an apartment with an area of 95 m², which includes a bedroom, a living room, a dining area with an American-style kitchen, and a bathroom. A garage for vehicles is also located on this floor. On the top floor, there are three separate guest rooms measuring 29, 24, and 35 m², each with a bathroom and a mini-kitchen.</p>
+            <p class="about-me__description" lang="text-hu">Földszinten egy kis lakás 61 n.m található: hálószobával, nappali, étkező amerikai konyhával, fürdőszobával. Első emeleten 95 n.m lakás található: hálószobával, nappali, étkező amerikai konyhával, fürdőszobával. Meg garázs személygépkocsira. Tetőtéren pedig 3 külön vendégei szoba, mosdóval es minikonyhával 29, 24, 35 n.m található.</p>
+            
+            <p class="about-me__description" lang="text-ru">В каждом номере есть балкон.  Дом отапливается тремя отдельными газовыми котлами с подогревом пола.  Территория контролируется камерой.  Дом продается со всей внутренней обстановкой: фарфор, посуда, гобелены, картины, антикварная мебель.</p>
+            <p class="about-me__description" lang="text-en">Every room has a balcony. The house is heated by three separate gas boilers with underfloor heating. The property is monitored by a security camera system. The house is sold with all interior furnishings: porcelain, dishes, tapestries, paintings, and antique furniture.</p>
+            <p class="about-me__description" lang="text-hu">Mindegyik szobához erkély tartozik. Az ingatlan fűtéséről három külön gázkazán padlófűtéssel  gondoskodik. A terület kamerával megfigyelt. A ház minden belső berendezéssel együtt: porcelánnal, étkészlettel, faliszőnyeggel, festményekkel, antik bútorokkal eladó.</p>
+
+            <ul class="about-me__extra">
+                <li class="about-me__extra-element">
+                    
+                    <div class="area-wrapper">
+                        <span class="about-me__extra-icon birthday"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="m15 1.784-.796.795a1.125 1.125 0 1 0 1.591 0L15 1.784ZM12 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L12 1.784ZM9 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L9 1.784ZM9.75 7.547c.498-.021.998-.035 1.5-.042V6.75a.75.75 0 0 1 1.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 0 1 1.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 0 0-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 0 1 1.5 0v.797ZM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 0 1 2.585.364 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 2.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0 0 12 12.75ZM21.75 18.131a2.604 2.604 0 0 0-1.915.165 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.604 2.604 0 0 0-1.915-.165v2.494c0 1.035.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494Z" />
+                        </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold" lang="text-ru">Площадь дома:</span>
+                            <span class="about-me__extra-title bold" lang="text-en">House area:</span>
+                            <span class="about-me__extra-title bold" lang="text-hu">Ház területét:</span>
+
+                            <span class="about-me__extra-description" lang="text-ru">335&nbsp;кв.м</span>
+                            <span class="about-me__extra-description" lang="text-en">335&nbsp;m<sup>2</sup></span>
+                            <span class="about-me__extra-description" lang="text-hu">335&nbsp;m<sup>2</sup></span>
+                        </div>
+                        <span class="about-me__extra-icon area"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="m15 1.784-.796.795a1.125 1.125 0 1 0 1.591 0L15 1.784ZM12 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L12 1.784ZM9 1.784l-.796.795a1.125 1.125 0 1 0 1.591 0L9 1.784ZM9.75 7.547c.498-.021.998-.035 1.5-.042V6.75a.75.75 0 0 1 1.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 0 1 1.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 0 0-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 0 1 1.5 0v.797ZM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 0 1 2.585.364 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 3.67 0 2.605 2.605 0 0 0 2.33 0 4.104 4.104 0 0 1 2.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0 0 12 12.75ZM21.75 18.131a2.604 2.604 0 0 0-1.915.165 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.605 2.605 0 0 0-2.33 0 4.104 4.104 0 0 1-3.67 0 2.604 2.604 0 0 0-1.915-.165v2.494c0 1.035.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494Z" />
+                        </svg>
+                        </span>
+                        <div class="about-me__extra-content">
+                            <span class="about-me__extra-title bold" lang="text-ru">Площадь участка:</span>
+                            <span class="about-me__extra-title bold" lang="text-en">Land area:</span>
+                            <span class="about-me__extra-title bold" lang="text-hu">Földterület:</span>
+
+                            <span class="about-me__extra-description" lang="text-ru">569&nbsp;кв.м.</span>
+                            <span class="about-me__extra-description" lang="text-en">569&nbsp;m<sup>2</sup></span>
+                            <span class="about-me__extra-description" lang="text-hu">569&nbsp;m<sup>2</sup></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="about-me__extra-element">
+                    <span class="about-me__extra-icon adress"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold" lang="text-ru">Адрес:</span>
+                        <span class="about-me__extra-title bold" lang="text-en">Adress:</span>
+                        <span class="about-me__extra-title bold" lang="text-hu">Cím:</span>
+
+                        <span class="about-me__extra-description" lang="text-ru">Хевиз, Венгрия</span>
+                        <span class="about-me__extra-description" lang="text-en">Heviz, Hungary</span>
+                        <span class="about-me__extra-description" lang="text-hu">Hévíz, Magyarország</span>
+
+                    </div>
+                </li>
+                <li class="about-me__extra-element">
+                    <span class="about-me__extra-icon education"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+                            <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+                            <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+                        </svg>
+                    </span>
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold" lang="text-ru">Дата постройки:</span>
+                        <span class="about-me__extra-title bold" lang="text-en">Date of construction:</span>
+                        <span class="about-me__extra-title bold" lang="text-hu">Építés dátuma:</span>
+
+                        <span class="about-me__extra-description">2003.0.0</span>
+                    </div>
+                </li>
+
+            </ul>
+            
+        </div>
+    </section>
+
+    <section class="achievements section-gray block-center" id="achievements">
+        <h2 class="second-title" lang="text-ru">Фото</h2>
+        <h2 class="second-title" lang="text-en">Pictures</h2>
+        <h2 class="second-title" lang="text-hu">Képek</h2>
+        
+		<div class="swiper achievements-list slider swiper-navigation-disabled">
+            <div class="swiper-wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.42.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.42.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.43 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.43 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.43.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.43.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.45.jpeg" data-fancybox="achievements"" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.45.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.46 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.46 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.46.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.46.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.48 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.48 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.48.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.48.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.49.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.49.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.50.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.50.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (2).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (2).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.53.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.53.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.55.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.55.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.56 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.56 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.56.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.56.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.57 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.57 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.57.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.57.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.35.48.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.35.48.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.37.00 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.37.00 (1).jpeg" alt="">
+                </a>
+            </div>
+			<div class="swiper-pagination"></div>
+			
+			  <!--If we need navigation buttons-->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+        </div>
+        <div class="achievements-border"></div>
+        <div class="plan-pictures">
+            <h2 class="second-title" lang="text-ru">Чертежи</h2>
+            <h2 class="second-title" lang="text-en">Scheme</h2>
+            <h2 class="second-title" lang="text-hu">Terv</h2>
+            <div class="plan-wrapper">
+                <a href="images/plan/WhatsApp Image 2024-12-01 at 20.42.26 (1).jpeg" data-fancybox="books" class="plan-pictures__element">
+                    <img class="achievements-list__image slider__images" src="images/plan/WhatsApp Image 2024-12-01 at 20.42.26 (1).jpeg" alt="">
+                </a>
+                <a href="images/plan/WhatsApp Image 2024-12-01 at 20.42.26.jpeg" data-fancybox="books" class="plan-pictures__element">
+                    <img class="achievements-list__image slider__images" src="images/plan/WhatsApp Image 2024-12-01 at 20.42.26.jpeg" alt="">
+                </a>
+                <a href="images/plan/WhatsApp Image 2024-12-01 at 20.42.27.jpeg" data-fancybox="books" class="plan-pictures__element">
+                    <img class="achievements-list__image slider__images" src="images/plan/WhatsApp Image 2024-12-01 at 20.42.27.jpeg" alt="">
+                </a>
+            </div>
+          </div>
+		<!--</div>
+        <div class="achievements-list slider">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-1" checked>
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-2">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-3">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-4">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-5">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-6">
+            <input type="radio" class="slider-input" name="slider_achievements" id="slider-achievements-7">
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.42.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.42.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.43 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.43 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.43.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.43.jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.45.jpeg" data-fancybox="achievements"" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.45.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.46 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.46 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.46.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.46.jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.48 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.48 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.48.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.48.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.49.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.49.jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.50.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.50.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (2).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52 (2).jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.52.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.52.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.53.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.53.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.55.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.55.jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.56 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.56 (1).jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.56.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.56.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.57 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.57 (1).jpeg" alt="">
+                </a>
+            </div>
+            <div class="achievments-list__view slider__wrapper">
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.34.57.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.34.57.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.35.48.jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.35.48.jpeg" alt="">
+                </a>
+                <a href="images/foto/WhatsApp Image 2024-12-01 at 20.37.00 (1).jpeg" data-fancybox="achievements" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__images" src="images/foto/WhatsApp Image 2024-12-01 at 20.37.00 (1).jpeg" alt="">
+                </a>
+            </div>
+            <div class="slider__controls block-center">
+                <label for="slider-achievements-1" class="slider__controls-element"></label>
+                <label for="slider-achievements-2" class="slider__controls-element"></label>
+                <label for="slider-achievements-3" class="slider__controls-element"></label>
+                <label for="slider-achievements-4" class="slider__controls-element"></label>
+                <label for="slider-achievements-5" class="slider__controls-element"></label>
+                <label for="slider-achievements-6" class="slider__controls-element"></label>
+                <label for="slider-achievements-7" class="slider__controls-element"></label>
+            </div>
+
+        </div>-->
+    </section>
+
+    <section class="goldenvisa" id="goldenvisa">
+        <h2 class="goldenvisa__title" lang="text-ru">Золотая Виза</h2>
+        <h2 class="goldenvisa__title" lang="text-en">Golden Visa</h2>
+        <h2 class="goldenvisa__title" lang="text-hu">Golden Visa</h2>
+        <div class="goldenvisa-wrapper">
+            <div class="goldenvisa-left">
+                <img src="images/maxresdefault.jpg" alt="My foto" class="about-me__image">
+            </div>
+
+            <div class="goldenvisa-right">
+
+
+                <p class="about-me__description" lang="text-ru">В Хевизе продается 3-х этажный дом с красивой панорамой, полностью меблированный и механизированный, ищет новых владельцев.</p>
+                <p class="about-me__description" lang="text-en">In Hévíz, a 3-floor house with a beautiful panorama is for sale, fully furnished and equipped, looking for new owners.</p>
+                <p class="about-me__description" lang="text-hu">Hévízen  3 szintes gyönyörű panorámával, teljesen berendezett és gépesített, családi ház keresik új gazdákat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me" id="contact-me">
+        <div class="contact-me-wrapper" id="contact-me-wrapper">
+        <h2 class="second-title" lang="text-ru">Свяжитесь со мной</h2>
+        <h2 class="second-title" lang="text-en">Contact Me</h2>
+        <h2 class="second-title" lang="text-hu">Lépjen kapcsolatba</h2>
+
+        
+        <form action="https://formsubmit.co/wesitehouse@gmail.com" method="POST" class="contact-me__form">
+            <div class="input-wrapper left">
+                <label for="name" class="label bold" lang="text-ru">Имя</label>
+                <label for="name" class="label bold" lang="text-en">Name</label>
+                <label for="name" class="label bold" lang="text-hu">Név</label>
+
+                <input class="input" type="text" id="name" name="name" placeholder="Напишите свое имя" lang="text-ru" required/>
+                <input class="input" type="text" id="name" name="name" placeholder="Write your name" lang="text-en" required/>
+                <input class="input" type="text" id="name" name="name" placeholder="Írjön le a nevét" lang="text-hu" required/>
+            </div>
+            <div class="input-wrapper right">
+                <label for="email" class="label bold">E-mail</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Напишите свой адрес электронной почты"  lang="text-ru" required/>
+                <input class="input" type="email" id="email" name="email" placeholder="Write your e-mail"  lang="text-en" required/>
+                <input class="input" type="email" id="email" name="email" placeholder="Írjön le az e-mailt"  lang="text-hu" required/>
+            </div>
+            
+            <div class="cls"></div>
+
+            <div class="textarea-wrapper">
+                <label for="message" class="label bold" lang="text-ru">Сообщение</label>
+                <label for="message" class="label bold" lang="text-en">Message</label>
+                <label for="message" class="label bold" lang="text-hu">Üzenet</label>
+
+                <textarea class="textarea" name="message" id="message"  placeholder="Подробно опишите ваш запрос" cols="30" rows="10" lang="text-ru" required></textarea>
+                <textarea class="textarea" name="message" id="message"  placeholder="Describe in details your request" cols="30" rows="10" lang="text-en" required></textarea>
+                <textarea class="textarea" name="message" id="message"  placeholder="Részletesen írja le kérését" cols="30" rows="10" lang="text-hu" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit" onClick="GFG_Fun()" lang="text-ru">Отправить</button>
+            <button type="submit" class="submit" onClick="GFG_Fun()" lang="text-en">Send</button>
+            <button type="submit" class="submit" onClick="GFG_Fun()" lang="text-hu">Küldés</button>
+        </form>
+        </div>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
