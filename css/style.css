@@ -217,7 +217,7 @@ root:hover {
     display: inline-block;
     font-family: Courier, monospace;
     /*width by simbols*/
-    width: 12ch;
+    width: 52ch;
     white-space: nowrap;
     
 
@@ -225,7 +225,7 @@ root:hover {
     border-right: 2px solid transparent;
     
     overflow: hidden;
-    animation: cursor 0.7s 8, print-text 2s steps(8);
+    animation: cursor 0.7s 8, print-text 2s steps(52);
 }
 @keyframes cursor {
     0% {
